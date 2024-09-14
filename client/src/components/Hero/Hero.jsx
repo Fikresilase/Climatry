@@ -35,7 +35,7 @@ const Hero = () => {
               <span>
                 <CountUp start={8800} end={9000} duration={4} /> <span>+</span>
               </span>
-              <span className="secondaryText">Monitored Regions</span>
+              <span className="secondaryText">Regions to be Monitored</span>
             </div>
 
             <div className="flexColCenter stat">
