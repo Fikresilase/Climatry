@@ -19,13 +19,13 @@ const Hero = () => {
             }}
             >
               Discover <br />
-              Most Suitable
-              <br /> Property
+              Areas in Danger
+              <br /> in Real-Time
             </motion.h1>
           </div>
           <div className="flexColStart secondaryText flexhero-des">
-            <span>Find a variety of properties that suit you very easilty</span>
-            <span>Forget all difficulties in finding a residence for you</span>
+            <span>Explore regions at risk with real-time data</span>
+            <span>Stay informed and prepared for natural disasters</span>
           </div>
 
           <SearchBar/>
@@ -35,38 +35,39 @@ const Hero = () => {
               <span>
                 <CountUp start={8800} end={9000} duration={4} /> <span>+</span>
               </span>
-              <span className="secondaryText">Premium Product</span>
+              <span className="secondaryText">Monitored Regions</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
                 <CountUp start={1950} end={2000} duration={4} /> <span>+</span>
               </span>
-              <span className="secondaryText">Happy Customer</span>
+              <span className="secondaryText">Data streams</span>
             </div>
 
             <div className="flexColCenter stat">
               <span>
                 <CountUp end={28} /> <span>+</span>
               </span>
-              <span className="secondaryText">Awards Winning</span>
+              <span className="secondaryText">Disaster types</span>
             </div>
           </div>
         </div>
 
         {/* right side */}
         <div className="flexCenter hero-right">
-          <motion.div
-            initial={{ x: "7rem", opacity: 0 }}
+          {/* <motion.div
+            initial={{ x: "2rem", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
               duration: 2,
               type: "ease-in",
             }}
             className="image-container"
-          >
-            <img src="./hero-image.png" alt="houses" />
-          </motion.div>
+          > */}
+<img className="w-[100%] max-w-[580px] h-auto" src="./hero-image.jpg" alt="disaster map" />
+
+{/* </motion.div> */}
         </div>
       </div>
     </section>

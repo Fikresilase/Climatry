@@ -6,7 +6,8 @@ const SearchBar = ({ filter, setFilter }) => {
     <div className="flexCenter search-bar">
       <HiLocationMarker color="var(--blue)" size={25} />
       <input
-        placeholder="Search by title/city/country..."
+        className="text-black" // Added Tailwind class to make text black
+        placeholder="Search by region/city/country..."
         type="text"
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
