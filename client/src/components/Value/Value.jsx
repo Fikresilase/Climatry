@@ -18,67 +18,30 @@ import "./Value.css";
 
 const Value = () => {
   return (
-    <section id="value" className="v-wrapper">
-      <div className="paddings innerWidth flexCenter v-container">
-        {/* left side */}
-        <div className="v-left">
-          <div className="image-container">
-            <img src="./value.png" alt="" />
-          </div>
-        </div>
+    <section className="bg-gray-50 py-20">
+  <div className="max-w-6xl mx-auto px-6">
+    <div className="text-center mb-8">
+    <h2 className="text-4xl font-semibold text-gray-900 mb-6">
+        What is Climatery?
+      </h2>
+      <h2 className="text-3xl font-semibold text-gray-900 mb-6">
+        A Comprehensive Glocal Data-Driven Machine Learning Model for Multi-Hazard Prediction and Climate Disaster Risk Management
+      </h2>
+      <p className="text-lg text-gray-700 leading-relaxed mx-auto max-w-4xl">
+        Climatery is an ongoing research project focused on revolutionizing disaster prediction and climate risk management through an innovative, large-scale system. By integrating real-time satellite data with advanced data analytics and machine learning, Climetry aims to forecast multi-hazard disasters on a global scale.
+      </p>
+    </div>
+    <div className="bg-white rounded-lg shadow-xl p-10">
+      <p className="text-lg text-gray-800 leading-relaxed mb-8">
+        This sophisticated system continuously collects and analyzes satellite data from around the world, constructing a comprehensive framework that monitors various climate factors such as precipitation, wind patterns, soil density, and vegetation coverage. By examining these interconnected environmental conditions, Climatery can predict cascading disasters, including drought-induced wildfires followed by landslides from heavy rains.
+      </p>
+      <p className="text-lg text-gray-800 leading-relaxed">
+        As an evolving research project, Climetry is focused on refining its capabilities. Current efforts aim to enhance data integration, expand the range of disaster types monitored, and improve the system’s ability to deliver actionable insights for disaster prevention and resource management. The project represents a significant step forward in global and local disaster preparedness.
+      </p>
+    </div>
+  </div>
+</section>
 
-        {/* right */}
-        <div className="flexColStart v-right">
-          <span className="orangeText">Our Value</span>
-
-          <span className="primaryText">Value We Give to You</span>
-
-          <span className="secondaryText">
-            We always ready to help by providijng the best services for you.
-            <br />
-            We beleive a good blace to live can make your life better
-          </span>
-
-          <Accordion
-            className="accordion"
-            allowMultipleExpanded={false}
-            preExpanded={[0]}
-          >
-            {data.map((item, i) => {
-              const [className, setClassName] = useState(null);
-              return (
-                <AccordionItem className={`accordionItem ${className}`} uuid={i} key={i}>
-                  <AccordionItemHeading>
-                    <AccordionItemButton className="flexCenter accordionButton ">
-                        {/* just for getting state of item */}
-                      <AccordionItemState>
-                        {({ expanded }) =>
-                          expanded
-                            ? setClassName("expanded")
-                            : setClassName("collapsed")
-                        }
-                      </AccordionItemState>
-                      <div className="flexCenter icon">{item.icon}</div>
-                      <span
-                        className="primaryText"
-                      >
-                        {item.heading}
-                      </span>
-                      <div className="flexCenter icon">
-                        <MdOutlineArrowDropDown size={20} />
-                      </div>
-                    </AccordionItemButton>
-                  </AccordionItemHeading>
-                  <AccordionItemPanel>
-                    <p className="secondaryText">{item.detail}</p>
-                  </AccordionItemPanel>
-                </AccordionItem>
-              );
-            })}
-          </Accordion>
-        </div>
-      </div>
-    </section>
   );
 };
 
