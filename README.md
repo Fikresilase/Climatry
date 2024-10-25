@@ -16,9 +16,9 @@ The project is actively evolving as researchers work to refine its capabilities.
 
 
 
-## interested to see the dev version hosted
+## interested to see the hosted dev version
 
 - <a
-  href="https://arxiv.org/abs/2409.13789"
-                    >arxiv</a
+  href="https://www.climatery.vercel.app"
+                    >Climatery</a
                   >
